@@ -14,4 +14,5 @@ export default {
   "trailer-atv": "ATV Römork",
   "tow-arm": "Çeki Demiri",
   caravan: "Karavan",
+  romork: "Römork",
 } as const;

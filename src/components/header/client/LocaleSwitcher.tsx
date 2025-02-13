@@ -14,7 +14,7 @@ export default function LocaleSwitcher() {
         onClick={() => setShowSwitcher(true)}
         className="text-black hover:underline hover:underline-offset-4"
       >
-        <IoIosGlobe className="h-9 w-9" />
+        <IoIosGlobe className="h-9 w-9" color="white" />
       </button>
       <div
         onClick={() => setShowSwitcher(false)}

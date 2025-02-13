@@ -14,4 +14,5 @@ export default {
   "trailer-atv": "ATV Trailer",
   "tow-arm": "Tow Arm",
   caravan: "Caravan",
+  romork: "Trailer",
 } as const;
