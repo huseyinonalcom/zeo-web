@@ -11,22 +11,22 @@ export default async function Home() {
           name={t("caravan")}
           imageSrc="/karavan.webp"
           alt={t("caravan")}
-          description="Karavan"
           href="/karavan"
+          description="Her şeyi ile size özel, adeta üzerinize dikilmiş bir takım elbise gibi karavan yaptırmaksa düşünceniz bizim kahvemiz acı, muhabbetimiz koyudur."
         />
         <CategoryCard
           name={t("trailer")}
           imageSrc="/trailer.png"
           alt={t("trailer")}
           href="/konfigurasyon/romork"
-          description="Römork ..."
+          description="Her aracın arkasına yakışır, hep sizi takip eder, daha ne yapsın ..."
         />
         <CategoryCard
           name={t("tow-arm")}
           imageSrc="/ceki-demiri.webp"
           alt={t("tow-arm")}
           href="/ceki-demiri"
-          description="Her araca çeki demiri ... Her araca çeki demiri ... Her araca çeki demiri ... Her araca çeki demiri ... Her araca çeki demiri ... Her araca çeki demiri ..."
+          description="Har marka model araç için çeki demiri montajı, proje ve tescil işlemleri profesyonel bir dokunuşla ..."
         />
       </div>
 
