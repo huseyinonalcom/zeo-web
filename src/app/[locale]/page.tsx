@@ -1,25 +1,28 @@
-import Trailer from "@/components/categories/Trailer";
+import CategoryCard from "@/components/categories/CategoryCard";
 import { getI18n } from "@/locales/server";
 
 export default async function Home() {
   const t = await getI18n();
-  const categories = [
-    {
-      id: "1",
-      name: "karavan",
-      description: "Özel tasarım Karavan",
-      component: <Trailer />,
-    },
-    { id: "2", name: "römork", description: "Kendi Römorkunuzu Tasarlayın" },
-    { id: "3", name: "çeki demiri", description: "Her araca çeki demiri" },
-  ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3">
-      {categories.map((category) => (
-        <div key={category.id} className="">
-          {category.component && category.component}
-        </div>
-      ))}
+    <div className="grid grid-cols-1 pt-8 md:grid-cols-3">
+      <CategoryCard
+        name={t("caravan")}
+        imageSrc="/karavan.webp"
+        alt={t("caravan")}
+        href="/karavan"
+      />
+      <CategoryCard
+        name={t("trailer")}
+        imageSrc="/trailer.jpeg"
+        alt={t("trailer")}
+        href="/konfigurasyon/römork"
+      />
+      <CategoryCard
+        name={t("tow-arm")}
+        imageSrc="/ceki-demiri.webp"
+        alt={t("tow-arm")}
+        href="/ceki-demiri"
+      />
     </div>
   );
 }

@@ -53,7 +53,9 @@ export default async function Category({
                         sizes="100vw, (max-width: 768px) 50vw, (max-width: 1280px) 33vw, 25vw"
                       />
                     </div>
-                    <p className="text-xl font-medium">{subcategory.name}</p>
+                    <p className="text-xl font-medium">
+                      {t(subcategory.name as keyof typeof t)}
+                    </p>
                   </div>
                 }
                 back={

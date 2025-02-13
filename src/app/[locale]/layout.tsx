@@ -42,7 +42,7 @@ export default async function RootLayout({
           </div>
           <div className="flex flex-row items-center justify-start md:justify-center">
             <Link href="/">
-              <Image height={90} width={90} src={logo} alt="Zeo Karavan" />
+              <Image height={90} priority quality={100} width={90} src={logo} alt="Zeo Karavan" />
             </Link>
           </div>
           <div className="flex flex-row justify-end gap-4">
