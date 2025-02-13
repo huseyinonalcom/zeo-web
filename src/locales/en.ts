@@ -1,0 +1,15 @@
+export default {
+  home: "Home",
+  partners: "Partners",
+  contact: "Contact",
+  news: "News",
+  "your-name": "Your Name",
+  "your-company": "Your Company",
+  "your-city": "City where you operate",
+  "your-phone": "Your Phone Number",
+  "your-email": "Your E-mail",
+  "short-description": "A short description of your goals.",
+  "send-message": "Send!",
+  trailer: "Trailer",
+  "trailer-atv": "ATV Trailer",
+} as const;
