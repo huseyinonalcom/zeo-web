@@ -19,7 +19,7 @@ export default async function CategoryCard({
       href={href}
       className="flex w-full flex-row items-center justify-center p-4"
     >
-      <div className="border-1 h-full w-full rounded-lg overflow-hidden border bg-slate-800 border-gray-400 duration-300">
+      <div className="border-1 h-full w-full overflow-hidden rounded-lg border border-gray-400 bg-slate-800 duration-300">
         <div className="relative aspect-[32/17] w-full">
           <Image
             src={imageSrc}
@@ -31,7 +31,7 @@ export default async function CategoryCard({
             }}
           />
         </div>
-        <div className="flex w-full flex-col items-start justify-start p-6 text-white">
+        <div className="flex w-full flex-col items-start justify-start p-4 text-white">
           <h2 className="text-xl font-bold">{name}</h2>
           <p>{description}</p>
         </div>

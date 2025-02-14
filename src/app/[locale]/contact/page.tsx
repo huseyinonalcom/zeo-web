@@ -77,7 +77,7 @@ export default async function Home() {
           <textarea
             name="Mesaj"
             placeholder={t("short-description")}
-            className="h-32 w-full resize-none rounded-xl border border-gray-300 bg-gray-50 bg-gray-500 px-4 py-3 placeholder:text-white hover:bg-gray-100 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="h-32 w-full resize-none rounded-xl border border-gray-300 bg-gray-500 px-4 py-3 placeholder:text-white hover:bg-slate-500 focus:border-transparent focus:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></textarea>
           <button
             className="flex w-full cursor-pointer flex-row items-center justify-center gap-2 rounded-xl bg-blue-400 px-4 py-2"
