@@ -19,7 +19,7 @@ export default async function CategoryCard({
       href={href}
       className="flex w-full flex-row items-center justify-center p-4"
     >
-      <div className="border-1 h-full w-full overflow-hidden rounded-lg border border-gray-400 bg-slate-800 duration-300">
+      <div className="border-1 h-full w-full overflow-hidden rounded-lg border border-gray-400 bg-slate-800 shadow-[5px_5px_0px_rgba(30,_30,_30,_1)] duration-300 hover:shadow-[0px_0px_0px_rgba(30,_30,_30,_1)]">
         <div className="relative aspect-[32/17] w-full">
           <Image
             src={imageSrc}
