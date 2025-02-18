@@ -60,7 +60,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`flex flex-col bg-white text-black antialiased`}>
-        <header className="sticky top-0 z-10 flex h-[108px] w-full flex-row items-center bg-black px-4 pt-2 text-white shadow-lg md:grid-cols-3 md:flex-col md:px-[121px]">
+        <header className="sticky top-0 z-10 flex h-[136px] w-full flex-row items-center bg-black px-4 pt-2 text-white shadow-lg md:grid-cols-3 md:flex-col md:px-[121px]">
           <div className="hidden w-full flex-row justify-between border-b border-gray-500/70 pb-1 md:flex md:px-4">
             <div className="flex flex-row items-start gap-5">
               <NavLink href="/">{t("home")}</NavLink>
@@ -90,12 +90,12 @@ export default async function RootLayout({
             </div>
             <LocaleSwitcher />
           </div>
-          <div className="flex h-full w-full flex-row items-center justify-between md:justify-start">
+          <div className="flex h-full w-full flex-row items-center justify-between md:justify-center">
             <div className="flex md:hidden">
               <LocaleSwitcher />
             </div>
-            <Link href="/">
-              <Image src={Logo} alt="Zeo Karavan & Römork" height={55} />
+            <Link href="/" className="px-6">
+              <Image src={Logo} alt="Zeo Karavan & Römork" height={81} />
             </Link>
             <I18nProviderClient locale={locale}>
               <MobileMenu />

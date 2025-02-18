@@ -1,7 +1,6 @@
 import CategoryCard from "@/components/categories/CategoryCard";
 import { getI18n } from "@/locales/server";
 import Image from "next/image";
-import Link from "next/link";
 
 export default async function Home() {
   const t = await getI18n();
@@ -14,6 +13,7 @@ export default async function Home() {
           alt={t("caravan")}
           href="/karavan"
           description="Her şeyi ile size özel, adeta üzerinize dikilmiş bir takım elbise gibi karavan yaptırmaksa düşünceniz bizim kahvemiz acı, muhabbetimiz koyudur."
+          className="md:order-0 order-1"
         />
         <CategoryCard
           name={t("trailer")}
@@ -21,6 +21,7 @@ export default async function Home() {
           alt={t("trailer")}
           href="/konfigurasyon/romork"
           description="Her aracın arkasına yakışır, hep sizi takip eder, daha ne yapsın ..."
+          className="order-0 md:order-1"
         />
         <CategoryCard
           name={t("tow-hitch")}
@@ -28,6 +29,7 @@ export default async function Home() {
           alt={t("tow-hitch")}
           href="/ceki-demiri"
           description="Har marka model araç için çeki demiri montajı, proje ve tescil işlemleri profesyonel bir dokunuşla ..."
+          className="order-2 md:order-2"
         />
       </div>
 
@@ -47,7 +49,7 @@ export default async function Home() {
           </div>
         ))}
       </div>
-      <div className="aspect-[21/7] w-full pt-6 md:px-28">
+      <div className="aspect-[10/7] w-full pt-6 md:aspect-[21/7] md:px-28">
         <div className="relative h-full w-full overflow-hidden rounded-lg">
           <Image
             src={"/karavan2.webp"}
@@ -58,10 +60,6 @@ export default async function Home() {
           />
         </div>
       </div>
-      <Link
-        href={""}
-        className="relative aspect-[21/7] w-full overflow-hidden rounded-lg md:px-28"
-      ></Link>
     </>
   );
 }

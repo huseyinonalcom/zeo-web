@@ -4,14 +4,37 @@ import { useI18n } from "@/locales/client";
 import { useState } from "react";
 import Link from "next/link";
 import { IoMenu } from "react-icons/io5";
+import { BiPhone } from "react-icons/bi";
+import { BsInstagram } from "react-icons/bs";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FiMapPin } from "react-icons/fi";
 
-const NavLink = ({ text, href }: { text: string; href: string }) => {
+const NavLink = ({
+  children,
+  href,
+  external,
+}: {
+  children: React.ReactNode;
+  href: string;
+  external?: boolean;
+}) => {
+  if (external) {
+    return (
+      <a
+        target="_blank"
+        className="flex flex-row items-center gap-2 text-xl font-medium text-white underline decoration-transparent underline-offset-0 duration-300 hover:decoration-white hover:underline-offset-2"
+        href={href}
+      >
+        {children}
+      </a>
+    );
+  }
   return (
     <Link
-      className="text-xl font-medium text-white underline decoration-transparent underline-offset-0 duration-300 hover:decoration-white hover:underline-offset-2"
+      className="flex flex-row items-center gap-2 text-xl font-medium text-white underline decoration-transparent underline-offset-0 duration-300 hover:decoration-white hover:underline-offset-2"
       href={href}
     >
-      {text}
+      {children}
     </Link>
   );
 };
@@ -22,7 +45,7 @@ export default function MobileMenu() {
   return (
     <div className="md:hidden">
       <button
-        className="flex cursor-pointer flex-row items-center justify-center"
+        className="flex cursor-pointer flex-row items-center justify-center text-[#C1C1C1] md:text-white"
         onClick={() => setIsOpen(!isOpen)}
       >
         <IoMenu className="h-9 w-9" />
@@ -33,8 +56,27 @@ export default function MobileMenu() {
         }`}
         onClick={() => setIsOpen(false)}
       >
-        <NavLink text={t("home")} href="/" />
-        <NavLink text={t("contact")} href="/contact" />
+        <NavLink href="/">{t("home")}</NavLink>
+        <NavLink href="https://maps.app.goo.gl/jEw5HvsaGaWwAUXa7" external>
+          <FiMapPin size={18} />
+          <p>Adresimiz</p>
+        </NavLink>
+        <NavLink href="tel:+905325433039" external>
+          <BiPhone size={20} />
+          <p>+90 532 543 30 39</p>
+        </NavLink>
+        <NavLink href="https://www.instagram.com/cansoycan/" external>
+          <BsInstagram size={20} />
+          <p>Instagram</p>
+        </NavLink>
+        <NavLink
+          href="https://www.facebook.com/p/ZEO-Karavan-61558470599468/"
+          external
+        >
+          <FaFacebookSquare size={20} />
+          <p>Facebook</p>
+        </NavLink>
+        <NavLink href="/contact">{t("contact")}</NavLink>
       </div>
     </div>
   );
