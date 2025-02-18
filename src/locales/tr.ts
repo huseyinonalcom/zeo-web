@@ -12,7 +12,7 @@ export default {
   "send-message": "Gönder!",
   trailer: "Römork",
   "trailer-atv": "ATV Römork",
-  "tow-arm": "Çeki Demiri",
+  "tow-hitch": "Çeki Demiri",
   caravan: "Karavan",
   romork: "Römork",
 } as const;
