@@ -15,4 +15,5 @@ export default {
   "tow-hitch": "Tow Hitch",
   caravan: "Caravan",
   romork: "Trailer",
+  search: "Search",
 } as const;

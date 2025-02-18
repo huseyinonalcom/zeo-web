@@ -15,4 +15,5 @@ export default {
   "tow-hitch": "Çeki Demiri",
   caravan: "Karavan",
   romork: "Römork",
+  search: "Arama",
 } as const;
