@@ -29,6 +29,7 @@ export default function LocaleSwitcher() {
           }}
           countryCode="TR"
           className="text-[5em]"
+          alt="Türk Bayrağı"
           svg
         />
         <ReactCountryFlag
@@ -38,6 +39,7 @@ export default function LocaleSwitcher() {
           }}
           countryCode="GB"
           className="text-[5em]"
+          alt="English Flag"
           svg
         />
       </div>
