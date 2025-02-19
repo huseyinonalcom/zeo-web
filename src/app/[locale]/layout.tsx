@@ -110,7 +110,12 @@ export default async function RootLayout({
               </I18nProviderClient>
             </div>
             <Link href="/" className="px-6 md:flex-shrink-0">
-              <Image src={Logo} alt="Zeo Karavan & Römork" height={81} />
+              <Image
+                src={Logo}
+                alt="Zeo Karavan & Römork"
+                height={81}
+                priority
+              />
             </Link>
             <I18nProviderClient locale={locale}>
               <MobileMenu />

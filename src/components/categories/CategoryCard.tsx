@@ -8,6 +8,7 @@ export default async function CategoryCard({
   alt,
   href,
   className,
+  priority,
 }: {
   name: string;
   description: string;
@@ -15,6 +16,7 @@ export default async function CategoryCard({
   alt: string;
   href: string;
   className?: string;
+  priority?: boolean;
 }) {
   return (
     <Link
@@ -27,6 +29,7 @@ export default async function CategoryCard({
       <div className="border-1 h-full w-full overflow-hidden rounded-lg border border-gray-400 shadow-[5px_5px_0px_rgba(30,_30,_30,_1)] duration-300 hover:shadow-[0px_0px_0px_rgba(30,_30,_30,_1)]">
         <div className="relative aspect-[32/17] w-full">
           <Image
+            priority={priority}
             src={imageSrc}
             alt={alt}
             fill

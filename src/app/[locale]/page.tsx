@@ -16,6 +16,7 @@ export default async function Home() {
           className="md:order-0 order-1"
         />
         <CategoryCard
+          priority
           name={t("trailer")}
           imageSrc="/trailer.png"
           alt={t("trailer")}
