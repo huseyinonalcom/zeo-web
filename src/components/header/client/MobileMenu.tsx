@@ -1,7 +1,7 @@
 "use client";
 
+import { BsChevronCompactDown, BsInstagram } from "react-icons/bs";
 import { FaFacebookSquare } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
 import { useI18n } from "@/locales/client";
 import { FiMapPin } from "react-icons/fi";
 import { IoMenu } from "react-icons/io5";
@@ -52,11 +52,14 @@ export default function MobileMenu() {
         <IoMenu className="h-9 w-9" />
       </button>
       <div
-        className={`fixed left-0 top-0 z-50 flex h-full w-full flex-col items-center justify-center gap-5 bg-gray-900 transition-opacity duration-300 ${
-          isOpen ? "opacity-95" : "pointer-events-none opacity-0"
+        className={`items-star fixed left-0 z-50 flex h-screen w-full flex-col justify-center gap-5 bg-gray-900 px-4 transition-all duration-300 ${
+          isOpen
+            ? "top-0 opacity-95"
+            : "pointer-events-none top-[100%] opacity-0"
         }`}
         onClick={() => setIsOpen(false)}
       >
+        <BsChevronCompactDown className="mx-auto" size={42} />
         <NavLink href="/">{t("home")}</NavLink>
         <NavLink href="https://maps.app.goo.gl/jEw5HvsaGaWwAUXa7" external>
           <FiMapPin size={18} />
