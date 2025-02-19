@@ -8,6 +8,7 @@ export default async function Home() {
     <>
       <div className="grid grid-cols-1 pt-2 md:grid-cols-3 md:px-24">
         <CategoryCard
+          priority
           name={t("caravan")}
           imageSrc="/karavan-hp.jpg"
           alt={t("caravan")}
