@@ -1,13 +1,13 @@
 "use client";
 
+import { FaFacebookSquare } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
 import { useI18n } from "@/locales/client";
-import { useState } from "react";
-import Link from "next/link";
+import { FiMapPin } from "react-icons/fi";
 import { IoMenu } from "react-icons/io5";
 import { BiPhone } from "react-icons/bi";
-import { BsInstagram } from "react-icons/bs";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FiMapPin } from "react-icons/fi";
+import { useState } from "react";
+import Link from "next/link";
 
 const NavLink = ({
   children,
