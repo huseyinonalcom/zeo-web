@@ -5,9 +5,9 @@ import { getCurrentLocale, getI18n } from "@/locales/server";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { I18nProviderClient } from "@/locales/client";
 import { RiShoppingBag3Line } from "react-icons/ri";
+import { BiPhone, BiSearch } from "react-icons/bi";
 import { BsInstagram } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
-import { BiPhone, BiSearch } from "react-icons/bi";
 import { IoMenu } from "react-icons/io5";
 import type { Metadata } from "next";
 import Logo from "@/assets/logo.png";
@@ -62,8 +62,8 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`flex flex-col bg-white text-black antialiased`}>
-        <header className="sticky top-0 z-10 flex h-[136px] w-full flex-col items-center bg-black px-6 text-white shadow-lg md:grid-cols-3 md:px-[121px] md:pt-2">
-          <div className="hidden w-full flex-row justify-between border-b border-gray-500/70 pb-1 md:flex md:px-4">
+        <header className="sticky top-0 z-10 flex h-[136px] w-full flex-col items-center bg-black px-7 pb-1 text-white shadow-lg md:grid-cols-3 md:px-[121px] md:pb-0 md:pt-2">
+          <div className="hidden w-full flex-row justify-between border-b border-gray-500/70 px-4 pb-1 md:flex">
             <div className="flex flex-row items-start gap-5">
               <NavLink href="/">{t("home")}</NavLink>
               <NavLink

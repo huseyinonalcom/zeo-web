@@ -20,7 +20,8 @@ export default async function CategoryCard({
     <Link
       href={href}
       className={
-        "flex w-full flex-row items-center justify-center p-4 " + className
+        "flex w-full flex-row items-center justify-center py-4 md:p-4 " +
+        className
       }
     >
       <div className="border-1 h-full w-full overflow-hidden rounded-lg border border-gray-400 shadow-[5px_5px_0px_rgba(30,_30,_30,_1)] duration-300 hover:shadow-[0px_0px_0px_rgba(30,_30,_30,_1)]">

@@ -19,7 +19,7 @@ export default function LocaleSwitcher() {
       <div
         onClick={() => setShowSwitcher(false)}
         className={`fixed left-0 top-0 z-50 flex h-full w-full flex-col items-center justify-center gap-5 bg-gray-900 transition-opacity duration-300 ${
-          showSwitcher ? "visible opacity-95" : "invisible opacity-0"
+          showSwitcher ? "opacity-95" : "pointer-events-none opacity-0"
         }`}
       >
         <ReactCountryFlag

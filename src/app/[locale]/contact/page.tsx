@@ -13,7 +13,7 @@ export default async function Home() {
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.4573961342185!2d32.4916999!3d37.9897904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08dc9049a3001%3A0x743b85efc4d60e56!2sZeo%20Karavan!5e0!3m2!1sen!2str!4v1739456683932!5m2!1sen!2str"
         loading="eager"
         referrerPolicy="no-referrer-when-downgrade"
-        className="h-[45vh] w-full invert"
+        className="h-[45vh] w-full"
       />
       <div className="mx-auto grid w-full max-w-[1500px] grid-cols-1 md:grid-cols-2">
         <div className="mx-auto flex w-full max-w-md flex-col items-center justify-center p-6">
