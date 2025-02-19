@@ -175,7 +175,7 @@ export default async function RootLayout({
             </div>
           </div>
         </header>
-        <main className="z-0 flex h-[calc(100vh-108px)] w-full flex-col items-center gap-4 overflow-y-auto">
+        <main className="z-0 flex h-[calc(100dvh-136px)] w-full flex-col items-center gap-4 overflow-y-auto">
           <div className="w-full p-2">{children}</div>
           <div className="mt-auto flex h-12 w-full flex-shrink-0 flex-col items-center justify-center bg-gray-800 font-medium text-stone-100">
             © Zeo Karavan 2023 - {new Date().getFullYear()}
