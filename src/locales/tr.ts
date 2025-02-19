@@ -16,4 +16,6 @@ export default {
   caravan: "Karavan",
   romork: "Römork",
   search: "Arama",
+  "our-address": "Adresimiz",
+  categories: "Kategoriler",
 } as const;

@@ -60,7 +60,7 @@ export default function MobileMenu() {
         <NavLink href="/">{t("home")}</NavLink>
         <NavLink href="https://maps.app.goo.gl/jEw5HvsaGaWwAUXa7" external>
           <FiMapPin size={18} />
-          <p>Adresimiz</p>
+          <p>{t("our-address")}</p>
         </NavLink>
         <NavLink href="tel:+905325433039" external>
           <BiPhone size={20} />

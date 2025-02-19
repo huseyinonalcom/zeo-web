@@ -71,7 +71,7 @@ export default async function RootLayout({
                 external
               >
                 <FiMapPin size={18} />
-                <p>Adresimiz</p>
+                <p>{t("our-address")}</p>
               </NavLink>
               <NavLink href="tel:+905325433039" external>
                 <BiPhone size={20} />
@@ -99,7 +99,7 @@ export default async function RootLayout({
                 className="flex flex-row items-center gap-3 rounded-lg border-[3px] border-[#C1C1C1] p-4"
               >
                 <IoMenu className="h-9 w-9" />
-                <p className="text-xl font-bold">Kategoriler</p>
+                <p className="text-xl font-bold">{t("categories")}</p>
               </button>
             </div>
             <div className="flex md:hidden">

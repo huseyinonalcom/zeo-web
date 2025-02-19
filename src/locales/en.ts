@@ -16,4 +16,6 @@ export default {
   caravan: "Caravan",
   romork: "Trailer",
   search: "Search",
+  "our-address": "Our Address",
+  categories: "Categories",
 } as const;
