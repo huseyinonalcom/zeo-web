@@ -137,13 +137,13 @@ export default async function RootLayout({
               </div>
             </div>
             <div className="hidden flex-shrink-0 flex-row gap-6 md:flex">
-              <button type="button">
+              <button aria-label="Profile" type="button">
                 <MdOutlinePersonOutline className="h-9 w-9" />
               </button>
-              <button type="button">
+              <button aria-label="Favorites" type="button">
                 <FaRegHeart className="h-7 w-7" />
               </button>
-              <button type="button" className="px-1">
+              <button aria-label="Cart" type="button" className="px-1">
                 <RiShoppingBag3Line className="h-7 w-7" />
               </button>
             </div>

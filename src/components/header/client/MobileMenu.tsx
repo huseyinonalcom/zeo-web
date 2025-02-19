@@ -45,6 +45,7 @@ export default function MobileMenu() {
   return (
     <div className="md:hidden">
       <button
+        aria-label="Menu"
         type="button"
         className="flex cursor-pointer flex-row items-center justify-center p-1 text-[#C1C1C1] md:text-white"
         onClick={() => setIsOpen(!isOpen)}
