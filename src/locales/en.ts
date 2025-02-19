@@ -18,4 +18,5 @@ export default {
   search: "Search",
   "our-address": "Our Address",
   categories: "Categories",
+  "language-switcher-button": "Language Switcher Button",
 } as const;

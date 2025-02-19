@@ -18,4 +18,5 @@ export default {
   search: "Arama",
   "our-address": "Adresimiz",
   categories: "Kategoriler",
+  "language-switcher-button": "Dil Değiştirici Düğmesi",
 } as const;

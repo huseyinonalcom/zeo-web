@@ -90,7 +90,9 @@ export default async function RootLayout({
               </NavLink>
               <NavLink href="/contact">{t("contact")}</NavLink>
             </div>
-            <LocaleSwitcher />
+            <I18nProviderClient locale={locale}>
+              <LocaleSwitcher />
+            </I18nProviderClient>
           </div>
           <div className="flex h-full w-full flex-row items-center justify-between">
             <div className="hidden flex-shrink-0 md:flex">
@@ -103,7 +105,9 @@ export default async function RootLayout({
               </button>
             </div>
             <div className="flex md:hidden">
-              <LocaleSwitcher />
+              <I18nProviderClient locale={locale}>
+                <LocaleSwitcher />
+              </I18nProviderClient>
             </div>
             <Link href="/" className="px-6 md:flex-shrink-0">
               <Image src={Logo} alt="Zeo Karavan & Römork" height={81} />
