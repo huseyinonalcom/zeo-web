@@ -1,11 +1,11 @@
 import { BiPaperPlane } from "react-icons/bi";
 import { getI18n } from "@/locales/server";
+import Image from "next/image";
 import {
   formInputStyle,
-  formTextAreaStyle,
   fromAttachmentStyle,
-} from "../contact/page";
-import Image from "next/image";
+  formTextAreaStyle,
+} from "../contact/styles";
 
 export default async function Caravan() {
   const t = await getI18n();
