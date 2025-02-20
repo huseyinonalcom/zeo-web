@@ -16,7 +16,8 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Zeo Karavan",
+  title:
+    "Zeo Römor & Karavan - Konya'dan Tüm Dünya'ya Özel Üretim Römork ve Karavan",
   description: "Konya'da özel tasarım Römork markası",
 };
 
