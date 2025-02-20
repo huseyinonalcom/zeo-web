@@ -58,6 +58,15 @@ export default async function Home() {
         >
           <input
             type="text"
+            name="Sayfa"
+            value="İletişim"
+            className="hidden"
+            readOnly
+          />
+          <input type="hidden" name="_captcha" value="false" readOnly />
+          <input type="text" name="_honey" className="invisible h-0" />
+          <input
+            type="text"
             name="İsim"
             placeholder={t("your-name")}
             className={formInputStyle}

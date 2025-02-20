@@ -23,4 +23,5 @@ export default {
   "caravan-vehicle": "Proje için araç",
   "project-attachment": "Projeniz için çizimler, fotoğraflar, planlar, vb.",
   "project-description": "Projenizin detayları",
+  "extra-description": "Ek bilgi",
 } as const;

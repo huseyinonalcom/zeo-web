@@ -7,12 +7,12 @@ import {
 } from "../contact/page";
 import Image from "next/image";
 
-export default async function Home() {
+export default async function Caravan() {
   const t = await getI18n();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div className="p-4">
-        <div className="relative h-full min-h-[800px] w-full">
+        <div className="relative aspect-square w-full">
           <Image
             src={"/karavan2.webp"}
             alt="Zeo Karavan"
@@ -40,6 +40,13 @@ export default async function Home() {
             action="https://formsubmit.co/info@zeokaravan.com"
             encType="multipart/form-data"
           >
+            <input
+              type="text"
+              name="Sayfa"
+              value="Karavan"
+              className="hidden"
+              readOnly
+            />
             <input
               type="text"
               name="İsim"
@@ -72,7 +79,7 @@ export default async function Home() {
               className={formInputStyle}
             />
             <label className={fromAttachmentStyle}>
-              <span className="text-gray-600">{t("project-attachment")}</span>
+              <span>{t("project-attachment")}</span>
               <input
                 type="file"
                 name="Ek Dosyalar"
@@ -87,6 +94,8 @@ export default async function Home() {
               placeholder={t("project-description")}
               className={formTextAreaStyle}
             ></textarea>
+            <input type="hidden" name="_captcha" value="false" readOnly />
+            <input type="text" name="_honey" className="invisible h-0" />
             <button
               className="flex w-full cursor-pointer flex-row items-center justify-center gap-2 rounded-xl bg-blue-400 px-4 py-2"
               type="submit"
