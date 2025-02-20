@@ -34,7 +34,7 @@ const NavLink = ({
   if (external) {
     return (
       <>
-        <a target="_blank" className={style} href={href}>
+        <a target="_blank" className={style} href={href} rel="noreferrer">
           {children}
         </a>
         <p className="text-gray-500 last:hidden">|</p>
