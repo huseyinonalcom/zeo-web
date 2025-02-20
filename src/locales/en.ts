@@ -19,4 +19,8 @@ export default {
   "our-address": "Our Address",
   categories: "Categories",
   "language-switcher-button": "Language Switcher Button",
+  "caravan-title": "Caravan",
+  "caravan-vehicle": "Vehicle for project",
+  "project-attachment": "Drawings, photos, plans, etc. for your project",
+  "project-description": "Description of your project",
 } as const;

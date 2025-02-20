@@ -19,4 +19,8 @@ export default {
   "our-address": "Adresimiz",
   categories: "Kategoriler",
   "language-switcher-button": "Dil Değiştirici Düğmesi",
+  "caravan-title": "Karavan",
+  "caravan-vehicle": "Proje için araç",
+  "project-attachment": "Projeniz için çizimler, fotoğraflar, planlar, vb.",
+  "project-description": "Projenizin detayları",
 } as const;

@@ -2,8 +2,14 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { BiPaperPlane } from "react-icons/bi";
 import { getI18n } from "@/locales/server";
 
-const inputStyle =
-  "w-full rounded-xl border border-gray-300 bg-gray-500 px-4 py-3 hover:bg-slate-500 focus:border-transparent focus:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-white";
+export const formInputStyle =
+  "w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-700";
+
+export const formTextAreaStyle =
+  "h-32 w-full resize-none rounded-xl border border-gray-300 px-4 py-3 placeholder:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500";
+
+export const fromAttachmentStyle =
+  "w-full rounded-xl border border-gray-300 text-gray-700 px-4 py-3 focus:outline-none hover:ring-2 hover:ring-blue-500 flex focus:ring-2 focus:ring-blue-500  flex-row items-center gap-2";
 
 export default async function Home() {
   const t = await getI18n();
@@ -46,7 +52,7 @@ export default async function Home() {
         </div>
         <form
           method="POST"
-          className="flex w-full flex-col items-start gap-2 rounded-lg bg-gray-600 p-4"
+          className="flex w-full flex-col items-start gap-2 rounded-lg border-2 border-[#C1C1C1] p-4 shadow-md"
           action="https://formsubmit.co/info@zeokaravan.com"
           encType="multipart/form-data"
         >
@@ -54,30 +60,32 @@ export default async function Home() {
             type="text"
             name="İsim"
             placeholder={t("your-name")}
-            className={inputStyle}
+            className={formInputStyle}
+            required
           />
           <input
             type="text"
             name="Şehir"
             placeholder={t("your-city")}
-            className={inputStyle}
+            className={formInputStyle}
           />
           <input
             type="phone"
             name="Telefon"
             placeholder={t("your-phone")}
-            className={inputStyle}
+            className={formInputStyle}
           />
           <input
             type="email"
             name="E-posta"
             placeholder={t("your-email")}
-            className={inputStyle}
+            className={formInputStyle}
           />
           <textarea
             name="Mesaj"
             placeholder={t("short-description")}
-            className="h-32 w-full resize-none rounded-xl border border-gray-300 bg-gray-500 px-4 py-3 placeholder:text-white hover:bg-slate-500 focus:border-transparent focus:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className={formTextAreaStyle}
+            required
           ></textarea>
           <button
             className="flex w-full cursor-pointer flex-row items-center justify-center gap-2 rounded-xl bg-blue-400 px-4 py-2"
