@@ -34,7 +34,7 @@ export default function CategoryCard({
             src={imageSrc}
             alt={alt}
             fill
-            sizes="50vw"
+            sizes="(max-width: 768px) 100vw, 45vw"
             style={{
               objectFit: "cover",
             }}
