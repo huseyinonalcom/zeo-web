@@ -63,8 +63,8 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`flex flex-col bg-white text-black antialiased`}>
-        <header className="sticky top-0 z-10 flex h-[136px] w-full flex-col items-center bg-black px-7 pb-1 text-white shadow-lg md:grid-cols-3 md:px-[121px] md:pb-0 md:pt-2">
-          <div className="hidden w-full flex-row justify-between border-b border-gray-500/70 px-4 pb-1 md:flex">
+        <header className="sticky top-0 z-10 flex h-[136px] w-full flex-col items-center bg-black px-7 pb-1 text-white shadow-lg lg:grid-cols-3 xl:px-[121px] lg:pb-0 lg:pt-2">
+          <div className="hidden w-full flex-row justify-between border-b border-gray-500/70 pb-1 lg:flex lg:px-4">
             <div className="flex flex-row items-start gap-5">
               <NavLink href="/">{t("home")}</NavLink>
               <NavLink
@@ -96,7 +96,7 @@ export default async function RootLayout({
             </I18nProviderClient>
           </div>
           <div className="flex h-full w-full flex-row items-center justify-between">
-            <div className="hidden flex-shrink-0 md:flex">
+            <div className="hidden flex-shrink-0 lg:flex">
               <button
                 type="button"
                 className="flex flex-row items-center gap-3 rounded-lg border-[3px] border-[#C1C1C1] p-4"
@@ -105,12 +105,12 @@ export default async function RootLayout({
                 <p className="text-xl font-bold">{t("categories")}</p>
               </button>
             </div>
-            <div className="flex md:hidden">
+            <div className="flex lg:hidden">
               <I18nProviderClient locale={locale}>
                 <LocaleSwitcher />
               </I18nProviderClient>
             </div>
-            <Link href="/" className="px-6 md:flex-shrink-0">
+            <Link href="/" className="px-6 lg:flex-shrink-0">
               <Image
                 src={Logo}
                 alt="Zeo Karavan & Römork"
@@ -123,7 +123,7 @@ export default async function RootLayout({
             </I18nProviderClient>
             <div
               aria-label="Search"
-              className="relative hidden w-full max-w-[320px] duration-300 md:flex"
+              className="relative hidden w-full max-w-[320px] duration-300 lg:flex"
             >
               <input
                 name="Search bar input"
@@ -142,7 +142,7 @@ export default async function RootLayout({
                 </button>
               </div>
             </div>
-            <div className="hidden flex-shrink-0 flex-row gap-6 md:flex">
+            <div className="hidden flex-shrink-0 flex-row gap-6 lg:flex">
               <button aria-label="Profile" type="button">
                 <MdOutlinePersonOutline className="h-9 w-9" />
               </button>
@@ -156,7 +156,7 @@ export default async function RootLayout({
           </div>
           <div
             aria-label="Search"
-            className="relative w-full py-2 duration-300 md:hidden"
+            className="relative w-full py-2 duration-300 lg:hidden"
           >
             <input
               name="Search bar input"

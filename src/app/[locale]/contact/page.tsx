@@ -13,7 +13,7 @@ export default async function Home() {
         referrerPolicy="no-referrer-when-downgrade"
         className="h-[45vh] w-full"
       />
-      <div className="mx-auto grid w-full max-w-[1500px] grid-cols-1 md:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-[1500px] grid-cols-1 lg:grid-cols-2">
         <div className="mx-auto flex w-full max-w-md flex-col items-center justify-center p-6">
           <div className="flex flex-col items-start gap-4">
             <a href="tel:+905325433039">

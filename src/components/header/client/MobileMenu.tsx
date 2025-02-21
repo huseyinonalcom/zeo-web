@@ -43,11 +43,11 @@ export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const t = useI18n();
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         aria-label="Menu"
         type="button"
-        className="flex cursor-pointer flex-row items-center justify-center p-1 text-[#C1C1C1] md:text-white"
+        className="flex cursor-pointer flex-row items-center justify-center p-1 text-[#C1C1C1] lg:text-white"
         onClick={() => setIsOpen(!isOpen)}
       >
         <IoMenu className="h-9 w-9" />

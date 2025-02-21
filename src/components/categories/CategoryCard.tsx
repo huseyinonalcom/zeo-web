@@ -23,7 +23,7 @@ export default function CategoryCard({
   return (
     <div
       className={
-        "flex w-full flex-row items-center justify-center py-4 md:p-4 " +
+        "flex w-full flex-row items-center justify-center py-4 lg:p-4 " +
         className
       }
     >

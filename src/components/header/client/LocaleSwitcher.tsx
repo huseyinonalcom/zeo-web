@@ -15,7 +15,7 @@ export default function LocaleSwitcher() {
         onClick={() => setShowSwitcher(true)}
         name={t("language-switcher-button")}
         aria-label={t("language-switcher-button")}
-        className="text-[#C1C1C1] hover:underline hover:underline-offset-4 md:text-white"
+        className="text-[#C1C1C1] hover:underline hover:underline-offset-4 lg:text-white"
       >
         <IoIosGlobe className="h-8 w-8" />
       </button>
