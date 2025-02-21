@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function CategoryCard({
+export default function CategoryCard({
   name,
   description,
   imageSrc,
   alt,
   href,
   className,
-  priority,
+  buttonText,
+  isCentered,
 }: {
   name: string;
   description: string;
@@ -16,34 +17,46 @@ export default async function CategoryCard({
   alt: string;
   href: string;
   className?: string;
-  priority?: boolean;
+  buttonText?: string;
+  isCentered?: boolean;
 }) {
   return (
-    <Link
-      href={href}
+    <div
       className={
         "flex w-full flex-row items-center justify-center py-4 md:p-4 " +
         className
       }
     >
-      <div className="border-1 h-full w-full overflow-hidden rounded-lg border border-gray-400 shadow-[5px_5px_0px_rgba(30,_30,_30,_1)] duration-300 hover:shadow-[0px_0px_0px_rgba(30,_30,_30,_1)]">
+      <div className="border-1 h-fit w-full overflow-hidden rounded-lg border border-gray-400 bg-white">
         <div className="relative aspect-[32/17] w-full">
           <Image
-            priority={priority}
+            priority
             src={imageSrc}
             alt={alt}
             fill
-            sizes="(max-width: 768px) 100vw, 33vw"
+            sizes="50vw"
             style={{
               objectFit: "cover",
             }}
           />
         </div>
-        <div className="flex w-full flex-col items-start justify-start p-4 pb-16">
+        <div
+          className={`flex w-full flex-col justify-start p-4 ${isCentered ? "items-start pb-6" : "items-center"}`}
+        >
           <h2 className="text-xl font-bold">{name}</h2>
-          <p>{description}</p>
+          {isCentered && (
+            <>
+              <p>{description}</p>
+              <Link
+                href={href}
+                className={`mx-auto mt-4 rounded-lg bg-blue-500 px-4 py-2 text-white`}
+              >
+                <p className={`text-xl font-bold`}>{buttonText ?? name}</p>
+              </Link>
+            </>
+          )}
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

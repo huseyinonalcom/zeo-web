@@ -1,38 +1,17 @@
-import CategoryCard from "@/components/categories/CategoryCard";
-import { getI18n } from "@/locales/server";
+import { getCurrentLocale, getI18n } from "@/locales/server";
+import { I18nProviderClient } from "@/locales/client";
+import MainCarousel from "./mainCarousel";
 import Image from "next/image";
 
 export default async function Home() {
+  const locale = await getCurrentLocale();
   const t = await getI18n();
   return (
     <>
-      <div className="grid grid-cols-1 pt-2 md:grid-cols-3 md:px-24">
-        <CategoryCard
-          priority
-          name={t("caravan")}
-          imageSrc="/karavan-hp.jpg"
-          alt={t("caravan")}
-          href="/karavan"
-          description="Her şeyi ile size özel, adeta üzerinize dikilmiş bir takım elbise gibi karavan yaptırmaksa düşünceniz bizim kahvemiz acı, muhabbetimiz koyudur."
-          className="md:order-0 order-1"
-        />
-        <CategoryCard
-          priority
-          name={t("trailer")}
-          imageSrc="/trailer.png"
-          alt={t("trailer")}
-          href="/konfigurasyon/romork"
-          description="Her aracın arkasına yakışır, hep sizi takip eder, daha ne yapsın ..."
-          className="order-0 md:order-1"
-        />
-        <CategoryCard
-          name={t("tow-hitch")}
-          imageSrc="/ceki-demiri.webp"
-          alt={t("tow-hitch")}
-          href="/ceki-demiri"
-          description="Har marka model araç için çeki demiri montajı, proje ve tescil işlemleri profesyonel bir dokunuşla ..."
-          className="order-2 md:order-2"
-        />
+      <div className="">
+        <I18nProviderClient locale={locale}>
+          <MainCarousel />
+        </I18nProviderClient>
       </div>
 
       <div className="grid w-full grid-cols-2 gap-8 pt-6 md:grid-cols-3 md:px-28 lg:grid-cols-6">
