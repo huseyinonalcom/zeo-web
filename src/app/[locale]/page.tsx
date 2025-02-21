@@ -14,7 +14,7 @@ export default async function Home() {
         </I18nProviderClient>
       </div>
 
-      <div className="grid w-full grid-cols-2 gap-8 pt-6 lg:grid-cols-3 lg:px-28 lg:grid-cols-6">
+      <div className="grid w-full grid-cols-2 gap-8 pt-6 md:grid-cols-3 lg:px-28 lg:grid-cols-6">
         {[...Array(6)].map((_, i) => (
           <div key={i} className="flex flex-col items-center gap-2">
             <div className="relative aspect-[14/15] w-full overflow-hidden rounded-lg">

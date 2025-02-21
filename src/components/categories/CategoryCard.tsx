@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 export default function CategoryCard({
   name,
   description,
@@ -40,21 +39,27 @@ export default function CategoryCard({
             }}
           />
         </div>
+
         <div
-          className={`flex w-full flex-col justify-start p-4 ${isCentered ? "items-start pb-6" : "items-center"}`}
+          className={`flex w-full flex-col items-center justify-start p-4 transition-all duration-100 ${isCentered ? "pb-6" : "items-center"}`}
         >
           <h2 className="text-xl font-bold">{name}</h2>
-          {isCentered && (
-            <>
+          <div
+            className="w-full overflow-hidden transition-all duration-500 ease-in-out"
+            style={{
+              height: isCentered ? "100px" : "1px", // Adjust height as needed
+            }}
+          >
+            <div className="flex w-full flex-col">
               <p>{description}</p>
               <Link
                 href={href}
-                className={`mx-auto mt-4 rounded-lg bg-blue-500 px-4 py-2 text-white`}
+                className="mx-auto mt-4 rounded-lg bg-blue-500 px-4 py-2 text-white"
               >
-                <p className={`text-xl font-bold`}>{buttonText ?? name}</p>
+                <p className="text-xl font-bold">{buttonText ?? name}</p>
               </Link>
-            </>
-          )}
+            </div>
+          </div>
         </div>
       </div>
     </div>
