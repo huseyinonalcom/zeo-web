@@ -10,6 +10,7 @@ export default function MainCarousel() {
 
   const items = [
     <CategoryCard
+      key={"tow"}
       name={t("tow-hitch")}
       imageSrc="/ceki-demiri.webp"
       alt={t("tow-hitch")}
@@ -17,6 +18,7 @@ export default function MainCarousel() {
       description="Her marka model araç için çeki demiri montajı, proje ve tescil işlemleri profesyonel bir dokunuşla ..."
     />,
     <CategoryCard
+      key={"trailer"}
       name={t("trailer")}
       imageSrc="/trailer.png"
       alt={t("trailer")}
@@ -24,6 +26,7 @@ export default function MainCarousel() {
       description="Her aracın arkasına yakışır, hep sizi takip eder, daha ne yapsın ..."
     />,
     <CategoryCard
+      key={"caravan"}
       name={t("caravan")}
       imageSrc="/karavan-hp.jpg"
       alt={t("caravan")}
