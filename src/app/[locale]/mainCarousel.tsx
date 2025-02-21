@@ -73,7 +73,7 @@ export default function MainCarousel() {
           );
         })}
       </div>
-      <div className="grid grid-cols-1">
+      <div className="grid grid-cols-1 lg:hidden">
         {...items.map((item) => cloneElement(item, { isCentered: true }))}
       </div>
     </>
