@@ -24,4 +24,7 @@ export default {
   "project-attachment": "Projeniz için çizimler, fotoğraflar, planlar, vb.",
   "project-description": "Projenizin detayları",
   "extra-description": "Ek bilgi",
+  "configuration": "Konfigürasyon",
+  "height-list": "Yükseklik Ölçüleri",
+  "depth-width-list": "En Böyü Ölçüleri",
 } as const;
