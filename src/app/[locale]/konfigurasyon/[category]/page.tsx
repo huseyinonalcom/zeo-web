@@ -6,7 +6,43 @@ import Link from "next/link";
 const subcategories = [
   {
     id: 1,
-    name: "trailer-atv",
+    name: "125 x 200",
+    parent: "romork",
+    description: "ATV Taşımaya uygun Römork",
+    files: [
+      {
+        name: "img.png",
+        url: "/atv.jpeg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "135 x 215",
+    parent: "romork",
+    description: "ATV Taşımaya uygun Römork",
+    files: [
+      {
+        name: "img.png",
+        url: "/atv.jpeg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "250 x 150",
+    parent: "romork",
+    description: "ATV Taşımaya uygun Römork",
+    files: [
+      {
+        name: "img.png",
+        url: "/atv.jpeg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "330 x 180",
     parent: "romork",
     description: "ATV Taşımaya uygun Römork",
     files: [
@@ -28,10 +64,9 @@ export default async function Category({
 
   return (
     <div className="flex w-full flex-col items-center gap-4">
-      <h1 className="text-4xl font-bold">{t(category as keyof typeof t)}</h1>
-      <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <h1 className="text-4xl font-bold">{t("En Böy Ölçüleri")}</h1>
+      <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
         {subcategories
-          .filter((subcat) => subcat.parent === category)
           .map((subcategory) => (
             <Link
               key={subcategory.id}
