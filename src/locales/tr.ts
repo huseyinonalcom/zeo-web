@@ -26,5 +26,5 @@ export default {
   "extra-description": "Ek bilgi",
   configuration: "Konfigürasyon",
   "height-list": "Yükseklik Ölçüleri",
-  "depth-width-list": "En Böyü Ölçüleri",
+  "depth-width-list": "En Boy Ölçüleri",
 } as const;
