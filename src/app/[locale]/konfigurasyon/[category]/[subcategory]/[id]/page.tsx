@@ -7,6 +7,7 @@ export default async function SubCategory({
 }) {
   const t = await getI18n();
   const { subcategory } = await params;
+  console.log(subcategory);
 
   return (
     <div className="flex w-full flex-col items-center gap-4">
