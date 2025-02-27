@@ -1,4 +1,5 @@
 "use client";
+
 import CategoryCard from "@/components/categories/CategoryCard";
 import { useI18n } from "@/locales/client";
 import { useState } from "react";

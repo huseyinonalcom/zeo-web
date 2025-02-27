@@ -1,7 +1,7 @@
+import { formInputStyle, formTextAreaStyle } from "../contact/styles";
 import { BiPaperPlane } from "react-icons/bi";
 import { getI18n } from "@/locales/server";
 import Image from "next/image";
-import { formInputStyle, formTextAreaStyle } from "../contact/styles";
 
 export default async function Towbar() {
   const t = await getI18n();

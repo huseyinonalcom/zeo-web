@@ -47,14 +47,14 @@ export default function CategoryCard({
           <div
             className="w-full overflow-hidden transition-all duration-500 ease-in-out"
             style={{
-              height: isCentered ? "100px" : "1px", // Adjust height as needed
+              height: isCentered ? "100px" : "1px",
             }}
           >
             <div className="flex w-full flex-col">
               <p>{description}</p>
               <Link
                 href={href}
-                className="mx-auto mt-4 rounded-lg bg-blue-500 px-4 py-2 text-white"
+                className="mx-auto mt-4 rounded-lg bg-blue-500 px-4 py-2 text-white duration-300 hover:bg-blue-600"
               >
                 <p className="text-xl font-bold">{buttonText ?? name}</p>
               </Link>

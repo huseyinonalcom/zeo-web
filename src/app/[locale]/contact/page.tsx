@@ -1,7 +1,7 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { formInputStyle, formTextAreaStyle } from "./styles";
 import { BiPaperPlane } from "react-icons/bi";
 import { getI18n } from "@/locales/server";
-import { formInputStyle, formTextAreaStyle } from "./styles";
 
 export default async function Home() {
   const t = await getI18n();
