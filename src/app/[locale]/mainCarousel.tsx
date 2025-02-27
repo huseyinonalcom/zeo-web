@@ -43,7 +43,7 @@ export default function MainCarousel() {
           return (
             <div
               key={item.name}
-              className={`absolute transform cursor-pointer transition-all duration-500 ease-in-out ${relativeIndex === 0 ? "z-10 w-1/2 opacity-100" : relativeIndex == 1 ? "z-5 w-1/3 -translate-x-full opacity-50" : "z-5 w-1/3 translate-x-full opacity-50"} `}
+              className={`absolute transform cursor-pointer transition-all duration-500 ease-in-out ${relativeIndex === 0 ? "z-10 w-1/2 opacity-100 cursor-default" : relativeIndex == 1 ? "z-5 w-1/3 -translate-x-full opacity-50" : "z-5 w-1/3 translate-x-full opacity-50"} `}
               onClick={() => setCurrentIndex(index)}
             >
               <div className="flex aspect-[22/17] w-full">
