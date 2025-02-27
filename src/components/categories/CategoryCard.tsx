@@ -47,7 +47,7 @@ export default function CategoryCard({
           <div
             className="w-full overflow-hidden transition-all duration-500 ease-in-out"
             style={{
-              height: isCentered ? "100px" : "1px",
+              height: isCentered ? "lg:100px" : "1px",
             }}
           >
             <div className="flex w-full flex-col">
