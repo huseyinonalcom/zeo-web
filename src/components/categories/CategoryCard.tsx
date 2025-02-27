@@ -45,10 +45,7 @@ export default function CategoryCard({
         >
           <h2 className="text-xl font-bold">{name}</h2>
           <div
-            className="w-full overflow-hidden transition-all duration-500 ease-in-out"
-            style={{
-              height: isCentered ? "lg:100px" : "1px",
-            }}
+            className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${isCentered ? "lg:h-[100px] h-fit" : "h-[1px]"}`}
           >
             <div className="flex w-full flex-col">
               <p>{description}</p>

@@ -24,7 +24,7 @@ export default {
   "project-attachment": "Drawings, photos, plans, etc. for your project",
   "project-description": "Description of your project",
   "extra-description": "Additional information",
-  "configuration": "Configuration",
+  configuration: "Configuration",
   "height-list": "Height List",
   "depth-width-list": "Depth and Width List",
 } as const;
